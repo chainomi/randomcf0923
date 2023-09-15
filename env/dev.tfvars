@@ -25,8 +25,8 @@ ec2_ingress_rules = [
     protocol = "tcp"
   },
   {
-    from = 8001
-    to = 8001
+    from = 7000
+    to = 7010
     protocol = "tcp"
   }
 ]
@@ -52,8 +52,8 @@ lb_ingress_rules = [
     protocol = "tcp"
   },
   {
-    from = 8001
-    to = 8001
+    from = 7000
+    to = 7010
     protocol = "tcp"
   }
 ]
