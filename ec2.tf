@@ -60,7 +60,7 @@ resource "aws_security_group" "windows" {
       from_port  = ingress.value.from
       to_port = ingress.value.to
       protocol = ingress.value.protocol
-      cidr_blocks = ["0.0.0.0/0"]
+      security_groups = ["${aws_security_group.alb.id}"]
     }
   }
 
