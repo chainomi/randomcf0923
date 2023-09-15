@@ -10,13 +10,13 @@
 
 ## Build Infrastructure
 ### Create s3 bucket for Terraform backend
-Create and s3 bucket following the steps below
+Create and s3 bucket following the steps below:
 
-1. Dont use upper case characters in the bucket name
-2. Disable public access
-3. Enable versioning
-4. Enable server-side encryption
-5. Update the backend_<env>.conf files for each environment in /scripts folder with the bucketname
+1. Dont use upper case characters in the bucket name.
+2. Disable public access.
+3. Enable versioning.
+4. Enable server-side encryption.
+5. Update the backend_<env>.conf files for each environment in the /backend folder with the bucketname.
 
 ### Build Infrastructure
  *Do not perform the steps below without creating the s3 backend*
