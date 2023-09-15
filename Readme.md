@@ -1,6 +1,6 @@
 # Instructions
- Follow the instructions below to deploys a the infrastruce using terraform.
- Deployments to each environment are performed using tfvar files with environment specific parameters
+ Follow the instructions below to deploys the infrastruce using terraform.
+ Deployments to each environment are performed using tfvar files with environment specific parameters.
 
 ## Note
 1. Parameters for the backend configuration files must be set before creating the backend 
@@ -14,7 +14,7 @@ Create and s3 bucket following the steps below
 
 1. Dont use upper case characters in the bucket name
 2. Disable public access
-3. Disable versioning
+3. Enable versioning
 4. Enable server-side encryption
 5. Update the backend_<env>.conf files for each environment in /scripts folder with the bucketname
 
